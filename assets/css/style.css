@@ -37,7 +37,15 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    left: -100vh;
+    position: absolute;
     width: 75vw;
+    transition: .25s;
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
 }
 
 .menu-lateral__logo {
@@ -47,10 +55,17 @@ body {
 }
 
 .menu-lateral__link {
+    align-items: center;
     color: #95999C;
     display: flex;
     height: 64px;  
     padding-left: 64px;
+}
+
+.menu-lateral__link--ativo {
+    border-left: 8px solid #ffffff;
+    color: #ffffff;
+    padding-left: 56px;
 }
 
 .menu-lateral__link::before {
@@ -60,4 +75,28 @@ body {
     left: 24px;
     position: absolute;
     width: 24px;
+}
+
+.inicio::before {
+    content: "\e902";
+}
+
+.video::before {
+    content: "\e90e";
+}
+
+.picos::before {
+    content: "\e909" ;
+}
+
+.integrantes::before {
+    content: "\e903";
+}
+
+.camisas::before {
+    content: "\e900";
+}
+
+.pinturas::before {
+    content: "\e90a";
 }
