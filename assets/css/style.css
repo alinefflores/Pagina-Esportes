@@ -3,6 +3,75 @@
     src: url(../font/icones.ttf);
 }
 
+@media screen and (min-width: 1440px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    .cabecalho {
+        background-color: #1D232A;
+        box-sizing: border-box;
+        column-gap: 32px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        height: 80px;
+        padding: 16px 60px;
+    }
+
+    .cabecalho__menu {
+        display: none;
+    }
+
+    .cabecalho__logo {
+        display: none;
+    }
+
+    .cabecalho__perfil {
+        align-items: center;
+        border-right: 1px solid #95999C;
+        column-gap: 8px;
+        color: #95999C;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-self: flex-end;
+        padding: 8px 32px;
+    }   
+
+    .cabecalho__perfil::before {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../img/profile_2.png);
+        content: " ";
+        display: block;
+        height: 32px;
+        width: 32px;        
+    }
+
+    .cabecalho__perfil::after {
+        content: "\e90d";
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+
+    .menu-lateral{
+        position: static;
+        width: 200px;
+    }
+
+    .principal {
+        column-gap: 32px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        padding: 16px 60px;
+    }
+
+    .cartao--recente {
+        display: ;
+    }
+}
+
 body {
     background-color: #1D232A;
     color: #ffffff;
@@ -16,6 +85,10 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 8px 16px;    
+}
+
+.cabecalho__perfil {
+    display: none;
 }
 
 .cabecalho__menu > i::before {
@@ -191,6 +264,10 @@ body {
 
 .cartao__botao--destaque::before {
     margin-right: 8px;
+}
+
+.cartao--recente {
+    display: none;
 }
 
 .secao {
