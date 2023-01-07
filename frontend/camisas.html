@@ -15,77 +15,111 @@
     <header class="cabecalho">
         <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
         <img src="../assets/img/logo.svg" alt="logotipo" class="cabecalho__logo">
+        <p class="cabecalho__perfil">Usuário Logado</p>
         <button class="cabecalho__notificacao" aria-label="Notificação"><i></i></button>
     </header>
 
     <nav class="menu-lateral">
         <img src="../assets/img/logo.svg" alt="logotipo" class="menu-lateral__logo">
         <a href="../index.html" class="menu-lateral__link inicio menu-lateral__link--ativo">Início</a>
-        <a href="./videos.html" class="menu-lateral__link video">Vídeos</a>
-        <a href="./picos.html" class="menu-lateral__link picos">Picos</a>
-        <a href="./integrantes.html" class="menu-lateral__link integrantes">Integrantes</a>
-        <a href="./camisas.html" class="menu-lateral__link camisas">Camisas</a>
-        <a href="./pinturas.html" class="menu-lateral__link pinturas">Pinturas</a>
+        <a href="../frontend/videos.html" class="menu-lateral__link video">Vídeos</a>
+        <a href="../frontend/picos.html" class="menu-lateral__link picos">Picos</a>
+        <a href="../frontend/integrantes.html" class="menu-lateral__link integrantes">Integrantes</a>
+        <a href="../frontend/camisas.html" class="menu-lateral__link camisas">Camisas</a>
+        <a href="../frontend/pinturas.html" class="menu-lateral__link pinturas">Pinturas</a>
     </nav>
 
     <main class="principal">
+        <h2 class="titulo-pagina">Produto Destaque do Mês</h2>
 
-        <article class="cartao cartao--destaque">
-            <img src="../assets/img/banner-mobile_2.png" alt="banner cartao" class="cartao__imagem">
+        <article class="cartao cartao--destaque destaque-video">
+            <img src="../assets/img/banner-mobile_2.png" alt="banner cartao" class="cartao__imagem cartao__imagem--mobile">
+            <img src="../assets/img/banner_2.png" alt="banner cartao" class="cartao__imagem cartao__imagem--desktop">
             <div class="cartao__conteudo">
                 <p class="cartao__destaque">Nova Arte</p>
-                <h3 class="cartao__titulo">Only Zikas - Lagoa Dompa</h3>
-                <p class="cartao__perfil">Bruno Lopez</p>
-                <p class="cartao__info cartao__info--tempo">33,33</p>
+                <h3 class="cartao__titulo">Only Zikas - Lagoa Dompa</h3>                
+                <p class="cartao__info cartao__info--moeda">33,33</p>
                 <p class="cartao__info cartao__info--visualizacao">196 visualizações</p>
-                <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Comprar Agora</button>
+                <button class="cartao__botao cartao__botao--carrinho cartao__botao--destaque">Comprar Agora</button>
             </div>
         </article>
 
-        <article>
-            <sectin class="secao">
-                <h3 class="titulo-secao">Camisas Recentes</h3>
-                <article class="cartao">
-                    <img src="../assets/img/produto_1.png" alt="banner cartao" class="cartao__imagem">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__perfil">André Soares</p>
-                        <h3 class="cartao__titulo">IBM</h3>
-                        <p class="cartao__info cartao__info--tempo">40,25</p>
-                        <button class="cartao__botao cartao__botao--play" aria-label="comprar"></button>
-                    </div>
-                </article>
+        <section class="secao secao-produtos">
+            <h3 class="titulo-secao">Camisas</h3>
 
-                <article class="cartao">
-                    <img src="../assets/img/produto_2.png" alt="banner cartao" class="cartao__imagem">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__perfil">Bruno Lopez</p>
-                        <h3 class="cartao__titulo">Huflex</h3>
-                        <p class="cartao__info cartao__info--tempo">25,50</p>
-                        <button class="cartao__botao cartao__botao--play" aria-label="comprar"></button>
-                    </div>
-                </article>
+            <article class="cartao">
+                <img src="../assets/img/produto_1.png" alt="banner cartao" class="cartao__imagem">
+                <div class="cartao__conteudo">                   
+                    <h3 class="cartao__titulo">IBM</h3>
+                    <p class="cartao__info cartao__info--moeda">40,25</p>
+                    <button class="cartao__botao cartao__botao--carrinho" aria-label="comprar"></button>
+                </div>
+            </article>
 
-                <article class="cartao">
-                    <img src="../assets/img/produto_3.png" alt="banner cartao" class="cartao__imagem">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__perfil">Bruno Lopez</p>
-                        <h3 class="cartao__titulo">Corujinha</h3>
-                        <p class="cartao__info cartao__info--tempo">35,50</p>
-                        <button class="cartao__botao cartao__botao--play" aria-label="comprar"></button>
-                    </div>
-                </article>
+            <article class="cartao">
+                <img src="../assets/img/produto_2.png" alt="banner cartao" class="cartao__imagem">
+                <div class="cartao__conteudo">                   
+                    <h3 class="cartao__titulo">Huflex</h3>
+                    <p class="cartao__info cartao__info--moeda">25,50</p>
+                    <button class="cartao__botao cartao__botao--carrinho" aria-label="comprar"></button>
+                </div>
+            </article>
 
-                <article class="cartao">
-                    <img src="../assets/img/produto_4.png" alt="banner cartao" class="cartao__imagem">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__perfil">Bruno Lopez</p>
-                        <h3 class="cartao__titulo">Gatinho</h3>
-                        <p class="cartao__info cartao__info--tempo">18,50</p>
-                        <button class="cartao__botao cartao__botao--play" aria-label="comprar"></button>
-                    </div>
-                </article>
-            </sectin>
-        </article>
+            <article class="cartao">
+                <img src="../assets/img/produto_3.png" alt="banner cartao" class="cartao__imagem">
+                <div class="cartao__conteudo">                    
+                    <h3 class="cartao__titulo">Corujinha</h3>
+                    <p class="cartao__info cartao__info--moeda">35,50</p>
+                    <button class="cartao__botao cartao__botao--carrinho" aria-label="comprar"></button>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <img src="../assets/img/produto_4.png" alt="banner cartao" class="cartao__imagem">
+                <div class="cartao__conteudo">                   
+                    <h3 class="cartao__titulo">Gatinho</h3>
+                    <p class="cartao__info cartao__info--moeda">18,50</p>
+                    <button class="cartao__botao cartao__botao--carrinho" aria-label="comprar"></button>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <img src="../assets/img/produto_1.png" alt="banner cartao" class="cartao__imagem">
+                <div class="cartao__conteudo">                    
+                    <h3 class="cartao__titulo">HZC</h3>
+                    <p class="cartao__info cartao__info--moeda">48,50</p>
+                    <button class="cartao__botao cartao__botao--carrinho" aria-label="comprar"></button>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <img src="../assets/img/produto_2.png" alt="banner cartao" class="cartao__imagem">
+                <div class="cartao__conteudo">                    
+                    <h3 class="cartao__titulo">Mundo</h3>
+                    <p class="cartao__info cartao__info--moeda">105,50</p>
+                    <button class="cartao__botao cartao__botao--carrinho" aria-label="comprar"></button>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <img src="../assets/img/produto_3.png" alt="banner cartao" class="cartao__imagem">
+                <div class="cartao__conteudo">                    
+                    <h3 class="cartao__titulo">Corujão</h3>
+                    <p class="cartao__info cartao__info--moeda">95,00</p>
+                    <button class="cartao__botao cartao__botao--carrinho" aria-label="comprar"></button>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <img src="../assets/img/produto_4.png" alt="banner cartao" class="cartao__imagem">
+                <div class="cartao__conteudo">                    
+                    <h3 class="cartao__titulo">Gatão</h3>
+                    <p class="cartao__info cartao__info--moeda">70,00</p>
+                    <button class="cartao__botao cartao__botao--carrinho" aria-label="comprar"></button>
+                </div>
+            </article>
+
+        </section>
     </main>
 
     <script src="../index.js"></script>
