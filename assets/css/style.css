@@ -295,7 +295,7 @@ body {
     font-size: 24px;
 }
 
-.cartao__botao--visualização::before {
+.cartao__botao--visualizacao::before {
     content: "\e90f";
     font-size: 24px;
 }
